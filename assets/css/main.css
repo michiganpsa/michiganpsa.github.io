@@ -2131,6 +2131,8 @@
 		}
 
 /* Header */
+	
+
 
 	#header {
 		position: relative;
@@ -2142,6 +2144,7 @@
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
+		z-index: 1000;
 	}
 
 		#header:before {
@@ -2153,7 +2156,7 @@
 
 		#header .inner {
 			position: relative;
-			z-index: 1;
+			z-index: 1000;
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
@@ -2237,17 +2240,21 @@
 		opacity: 1;
 	}
 
+	
+
 /* Nav */
 
+
 	#nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
-		z-index: 1;
+		padding: 0.8em 0 0.8em 0;
+		z-index: 1000;
 		overflow: hidden;
+		background: rgba(43, 37, 44, 0.8);
 	}
 
 		#nav > ul {
@@ -2309,6 +2316,8 @@
 				#nav > ul > li > ul {
 					display: none;
 				}
+
+			
 
 	.dropotron {
 		background: rgba(255, 255, 255, 0.975);
